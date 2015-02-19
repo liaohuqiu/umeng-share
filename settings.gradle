@@ -1,0 +1,3 @@
+rootProject.name = 'Umeng Share'
+
+include ':umeng-share-lib'
