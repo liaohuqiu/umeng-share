@@ -9,7 +9,7 @@
         <version>1.0.1</version>
     </parent>
 
-    <groupId>in.srain.mix</groupId>
+    <groupId>in.srain.3rd</groupId>
     <artifactId>umeng-share</artifactId>
     <packaging>aar</packaging>
     <name>Umeng Share</name>
@@ -21,12 +21,103 @@
             <artifactId>httpmime</artifactId>
             <version>4.4</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.umeng</groupId>
+            <artifactId>SocialSDK_WeiXin_1</artifactId>
+            <version>1.0.1</version>
+            <type>jar</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.umeng</groupId>
+            <artifactId>SocialSDK_facebook_1</artifactId>
+            <version>1.0.1</version>
+            <type>jar</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.umeng</groupId>
+            <artifactId>umeng_social_sdk</artifactId>
+            <version>1.0.1</version>
+            <type>jar</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.umeng</groupId>
+            <artifactId>SocialSDK_sms</artifactId>
+            <version>1.0.1</version>
+            <type>jar</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.umeng</groupId>
+            <artifactId>SocialSDK_QQZone_2</artifactId>
+            <version>1.0.1</version>
+            <type>jar</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.umeng</groupId>
+            <artifactId>SocialSDK_QQZone_1</artifactId>
+            <version>1.0.1</version>
+            <type>jar</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.umeng</groupId>
+            <artifactId>SocialSDK_WeiXin_2</artifactId>
+            <version>1.0.1</version>
+            <type>jar</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.umeng</groupId>
+            <artifactId>SocialSDK_facebook_2</artifactId>
+            <version>1.0.1</version>
+            <type>jar</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.umeng</groupId>
+            <artifactId>SocialSDK_Sina</artifactId>
+            <version>1.0.1</version>
+            <type>jar</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.umeng</groupId>
+            <artifactId>SocialSDK_email</artifactId>
+            <version>1.0.1</version>
+            <type>jar</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.umeng</groupId>
+            <artifactId>SocialSDK_QQZone_3</artifactId>
+            <version>1.0.1</version>
+            <type>jar</type>
+        </dependency>
+
     </dependencies>
 
     <properties>
         <android.maven.plugin.version>3.8.2</android.maven.plugin.version>
         <android.compile.api_level>19</android.compile.api_level>
     </properties>
+
+    <repositories>
+        <repository>
+            <id>github-srain-umeng-lib</id>
+            <url>https://raw.githubusercontent.com/liaohuqiu/umeng-libs/master/repository</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 
     <build>
         <finalName>${project.artifactId}</finalName>

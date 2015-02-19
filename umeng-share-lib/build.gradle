@@ -2,12 +2,12 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion Integer.parseInt(project.ANDROID_BUILD_SDK_VERSION)
-        buildToolsVersion project.ANDROID_BUILD_TOOLS_VERSION
+    buildToolsVersion project.ANDROID_BUILD_TOOLS_VERSION
 
-        defaultConfig {
-            minSdkVersion 8
-                targetSdkVersion Integer.parseInt(project.ANDROID_BUILD_TARGET_SDK_VERSION)
-        }
+    defaultConfig {
+        minSdkVersion 8
+        targetSdkVersion Integer.parseInt(project.ANDROID_BUILD_TARGET_SDK_VERSION)
+    }
 
     lintOptions {
         abortOnError false
@@ -16,12 +16,12 @@ android {
     sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'
-                java.srcDirs = ['src']
-                resources.srcDirs = ['resources']
-                res.srcDirs = ['res']
-                assets.srcDirs = ['assets']
-                // aidl.srcDirs = ['src']
-                // renderscript.srcDirs = ['src']
+            java.srcDirs = ['src']
+            resources.srcDirs = ['resources']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+            // aidl.srcDirs = ['src']
+            // renderscript.srcDirs = ['src']
         }
 
         androidTest.setRoot('tests')
@@ -33,17 +33,17 @@ task fatJar(type: Jar) {
 }
 
 dependencies {
-    compile 'in.srain.mix.umeng_lib:SocialSDK_WeiXin_1:1.0.1@jar'
-        compile 'in.srain.mix.umeng_lib:SocialSDK_facebook_1:1.0.1@jar'
-        compile 'in.srain.mix.umeng_lib:umeng_social_sdk:1.0.1@jar'
-        compile 'in.srain.mix.umeng_lib:SocialSDK_sms:1.0.1@jar'
-        compile 'in.srain.mix.umeng_lib:SocialSDK_QQZone_2:1.0.1@jar'
-        compile 'in.srain.mix.umeng_lib:SocialSDK_QQZone_1:1.0.1@jar'
-        compile 'in.srain.mix.umeng_lib:SocialSDK_WeiXin_2:1.0.1@jar'
-        compile 'in.srain.mix.umeng_lib:SocialSDK_facebook_2:1.0.1@jar'
-        compile 'in.srain.mix.umeng_lib:SocialSDK_Sina:1.0.1@jar'
-        compile 'in.srain.mix.umeng_lib:SocialSDK_email:1.0.1@jar'
-        compile 'in.srain.mix.umeng_lib:SocialSDK_QQZone_3:1.0.1@jar'
+    compile 'com.umeng:SocialSDK_WeiXin_1:1.0.1@jar'
+    compile 'com.umeng:SocialSDK_facebook_1:1.0.1@jar'
+    compile 'com.umeng:umeng_social_sdk:1.0.1@jar'
+    compile 'com.umeng:SocialSDK_sms:1.0.1@jar'
+    compile 'com.umeng:SocialSDK_QQZone_2:1.0.1@jar'
+    compile 'com.umeng:SocialSDK_QQZone_1:1.0.1@jar'
+    compile 'com.umeng:SocialSDK_WeiXin_2:1.0.1@jar'
+    compile 'com.umeng:SocialSDK_facebook_2:1.0.1@jar'
+    compile 'com.umeng:SocialSDK_Sina:1.0.1@jar'
+    compile 'com.umeng:SocialSDK_email:1.0.1@jar'
+    compile 'com.umeng:SocialSDK_QQZone_3:1.0.1@jar'
 }
 
 apply from: './gradle-mvn-push.gradle'
