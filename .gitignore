@@ -12,6 +12,7 @@
 bin/
 gen/
 *target/
+*tmp/
 *build/
 .gradle/
 .idea/

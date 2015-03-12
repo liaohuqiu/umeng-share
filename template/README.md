@@ -33,7 +33,7 @@ allprojects {
             url 'https://oss.sonatype.org/content/repositories/snapshots'
         }
         maven {
-                url 'https://raw.githubusercontent.com/liaohuqiu/umeng-libs/master/repository'
+            url 'https://raw.githubusercontent.com/liaohuqiu/umeng-libs/master/repository'
         }
     }
 }

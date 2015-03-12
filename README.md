@@ -1,124 +1,43 @@
+UMENG 分享组件aar格式包，使用aar包，所有umeng相关的资源就不用再放到项目中，让项目文件变得干净。
 
+喜欢项目干净的同学，可以试试!
 
-### For maven
+其他库依赖在这个项目中
 
-```
-<repository>
-    <id>umeng</id>
-    <url>https://raw.githubusercontent.com/liaohuqiu/umeng-share/master/mvn-dependencies/repository</url>
-    <releases>
-        <enabled>true</enabled>
-    </releases>
-    <snapshots>
-        <enabled>true</enabled>
-    </snapshots>
-</repository>
-```
+https://github.com/liaohuqiu/umeng-libs
 
-Dependencies:
+库发布到了mavenCentral，最新版本是 1.0.1.3-SNAPSHOT
+
+Maven 中:
 
 ```
-
 <dependency>
-    <groupId>in.srain.mix.umeng_lib</groupId>
-    <artifactId>SocialSDK_WeiXin_1</artifactId>
-    <version>1.0.1</version>
-    <type>jar</version>
+    <groupId>in.srain.3rd</groupId>
+    <artifactId>umeng-share</artifactId>
+    <version>1.0.1.3-SNAPSHOT</version>
+    <type>aar</version>
 </dependency>
-
-<dependency>
-    <groupId>in.srain.mix.umeng_lib</groupId>
-    <artifactId>SocialSDK_facebook_1</artifactId>
-    <version>1.0.1</version>
-    <type>jar</version>
-</dependency>
-
-<dependency>
-    <groupId>in.srain.mix.umeng_lib</groupId>
-    <artifactId>umeng_social_sdk</artifactId>
-    <version>1.0.1</version>
-    <type>jar</version>
-</dependency>
-
-<dependency>
-    <groupId>in.srain.mix.umeng_lib</groupId>
-    <artifactId>SocialSDK_sms</artifactId>
-    <version>1.0.1</version>
-    <type>jar</version>
-</dependency>
-
-<dependency>
-    <groupId>in.srain.mix.umeng_lib</groupId>
-    <artifactId>SocialSDK_QQZone_2</artifactId>
-    <version>1.0.1</version>
-    <type>jar</version>
-</dependency>
-
-<dependency>
-    <groupId>in.srain.mix.umeng_lib</groupId>
-    <artifactId>SocialSDK_QQZone_1</artifactId>
-    <version>1.0.1</version>
-    <type>jar</version>
-</dependency>
-
-<dependency>
-    <groupId>in.srain.mix.umeng_lib</groupId>
-    <artifactId>SocialSDK_WeiXin_2</artifactId>
-    <version>1.0.1</version>
-    <type>jar</version>
-</dependency>
-
-<dependency>
-    <groupId>in.srain.mix.umeng_lib</groupId>
-    <artifactId>SocialSDK_facebook_2</artifactId>
-    <version>1.0.1</version>
-    <type>jar</version>
-</dependency>
-
-<dependency>
-    <groupId>in.srain.mix.umeng_lib</groupId>
-    <artifactId>SocialSDK_Sina</artifactId>
-    <version>1.0.1</version>
-    <type>jar</version>
-</dependency>
-
-<dependency>
-    <groupId>in.srain.mix.umeng_lib</groupId>
-    <artifactId>SocialSDK_email</artifactId>
-    <version>1.0.1</version>
-    <type>jar</version>
-</dependency>
-
-<dependency>
-    <groupId>in.srain.mix.umeng_lib</groupId>
-    <artifactId>SocialSDK_QQZone_3</artifactId>
-    <version>1.0.1</version>
-    <type>jar</version>
-</dependency>
-
 ```
 
-### For gradle
+gradle:
 
 ```
-maven {
-    url 'https://raw.githubusercontent.com/liaohuqiu/umeng-share/master/mvn-dependencies/repository'
+allprojects {
+    repositories {
+        jcenter()
+        mavenCentral();
+        maven {
+            url 'https://oss.sonatype.org/content/repositories/releases'
+        }
+        maven {
+            url 'https://oss.sonatype.org/content/repositories/snapshots'
+        }
+        maven {
+            url 'https://raw.githubusercontent.com/liaohuqiu/umeng-libs/master/repository'
+        }
+    }
 }
 ```
 
-Dependencies:
 
-```
-compile 'in.srain.mix.umeng_lib:SocialSDK_WeiXin_1:1.0.1@jar'
-compile 'in.srain.mix.umeng_lib:SocialSDK_facebook_1:1.0.1@jar'
-compile 'in.srain.mix.umeng_lib:umeng_social_sdk:1.0.1@jar'
-compile 'in.srain.mix.umeng_lib:SocialSDK_sms:1.0.1@jar'
-compile 'in.srain.mix.umeng_lib:SocialSDK_QQZone_2:1.0.1@jar'
-compile 'in.srain.mix.umeng_lib:SocialSDK_QQZone_1:1.0.1@jar'
-compile 'in.srain.mix.umeng_lib:SocialSDK_WeiXin_2:1.0.1@jar'
-compile 'in.srain.mix.umeng_lib:SocialSDK_facebook_2:1.0.1@jar'
-compile 'in.srain.mix.umeng_lib:SocialSDK_Sina:1.0.1@jar'
-compile 'in.srain.mix.umeng_lib:SocialSDK_email:1.0.1@jar'
-compile 'in.srain.mix.umeng_lib:SocialSDK_QQZone_3:1.0.1@jar'
 
-```

@@ -13,7 +13,7 @@
     <artifactId>umeng-share</artifactId>
     <packaging>aar</packaging>
     <name>Umeng Share</name>
-    <version>1.0.1.3-SNAPSHOT</version>
+    <version>{lib_latest_version}</version>
 
     <dependencies>
         <dependency>
