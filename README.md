@@ -6,13 +6,13 @@ UMENG 分享组件aar格式包，使用aar包，所有umeng相关的资源就不
 
 https://github.com/liaohuqiu/umeng-libs
 
-库发布到了mavenCentral，最新版本是 1.0.1.3-SNAPSHOT
+库发布到了mavenCentral，最新版本是 1.0.1.4-SNAPSHOT
 
 ```
 <dependency>
     <groupId>in.srain.3rd</groupId>
     <artifactId>umeng-share</artifactId>
-    <version>1.0.1.3-SNAPSHOT</version>
+    <version>1.0.1.4-SNAPSHOT</version>
     <type>aar</version>
 </dependency>
 ```
@@ -20,7 +20,7 @@ https://github.com/liaohuqiu/umeng-libs
 或者
 
 ```
-compile 'in.srain.3rd:umeng-share:1.0.1.3-SNAPSHOT@aar'
+compile 'in.srain.3rd:umeng-share:1.0.1.4-SNAPSHOT@aar'
 ```
 
 
@@ -60,6 +60,3 @@ allprojects {
     }
 }
 ```
-
-
-

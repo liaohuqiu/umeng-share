@@ -1,11 +1,12 @@
 import os
 vars = {
-        'lib_latest_version': '1.0.1.3-SNAPSHOT',
+        'lib_latest_version': '1.0.1.4-SNAPSHOT',
         }
 
 files = [
         'umeng-share-lib/gradle.properties',
         'umeng-share-lib/pom.xml',
+        'umeng-share-lib/build.gradle',
         'README.md',
         ]
 
