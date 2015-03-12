@@ -8,8 +8,6 @@ https://github.com/liaohuqiu/umeng-libs
 
 库发布到了mavenCentral，最新版本是 1.0.1.3-SNAPSHOT
 
-Maven 中:
-
 ```
 <dependency>
     <groupId>in.srain.3rd</groupId>
@@ -19,7 +17,31 @@ Maven 中:
 </dependency>
 ```
 
-gradle:
+或者
+
+```
+compile 'in.srain.3rd:umeng-share:1.0.1.3-SNAPSHOT@aar'
+```
+
+
+项目依赖umeng的其他jar包，需要配置maven 源
+
+Maven 中
+
+```
+<repository>
+    <id>github-srain-umeng-lib</id>
+    <url>https://raw.githubusercontent.com/liaohuqiu/umeng-libs/master/repository</url>
+    <releases>
+        <enabled>true</enabled>
+    </releases>
+    <snapshots>
+        <enabled>true</enabled>
+    </snapshots>
+</repository>
+```
+
+gradle
 
 ```
 allprojects {
